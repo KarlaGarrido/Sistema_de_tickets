@@ -1,0 +1,76 @@
+Tu codigo corregido sin API 
+
+<script>
+function initializeGoogleMaps() {
+  // Map Markers
+  var mapMarkers = [{
+    address: "Justina 129, San Lorenzo Xicoténcatl, Ciudad de México",
+    html: "Justina 129, San Lorenzo Xicoténcatl, Iztapalapa, 09130, Ciudad de México",
+    icon: {
+      image: "img/pin.png",
+      iconsize: [26, 46],
+      iconanchor: [12, 46]
+    },
+    popup: true
+  }];
+
+  // Map Initial Location
+  var initLatitude = 19.385990;
+  var initLongitude = -99.026460;
+
+  // Map Extended Settings
+  var mapSettings = {
+    controls: {
+      draggable: (!(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))),
+      panControl: true,
+      zoomControl: true,
+      mapTypeControl: true,
+      scaleControl: true,
+      streetViewControl: true,
+      overviewMapControl: true
+    },
+    scrollwheel: false,
+    markers: mapMarkers,
+    latitude: initLatitude,
+    longitude: initLongitude,
+    zoom: 11
+  };
+
+  var map = new GMaps({
+    el: '#googlemaps',
+    lat: mapSettings.latitude,
+    lng: mapSettings.longitude,
+    zoom: mapSettings.zoom,
+    scrollwheel: mapSettings.scrollwheel
+  });
+
+  // Add markers to the map
+  $.each(mapMarkers, function(index, marker) {
+    map.addMarker({
+      lat: marker.latitude,
+      lng: marker.longitude,
+      title: marker.html,
+      icon: {
+        url: marker.icon.image,
+        size: new google.maps.Size(marker.icon.iconsize[0], marker.icon.iconsize[1]),
+        anchor: new google.maps.Point(marker.icon.iconanchor[0], marker.icon.iconanchor[1])
+      },
+      infoWindow: {
+        content: marker.html
+      }
+    });
+  });
+
+  // Center the map at the given coordinates
+  map.setCenter(initLatitude, initLongitude);
+}
+
+// Initialize Google Maps when element enters browser view
+theme.fn.intObs('.google-map', 'initializeGoogleMaps()', {});
+
+// Center map at a specific location
+var mapCenterAt = function(options, e) {
+  e.preventDefault();
+  $('#googlemaps').gMap("centerAt", options);
+}
+</script>
