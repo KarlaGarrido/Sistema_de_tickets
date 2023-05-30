@@ -32,7 +32,7 @@ class Sla extends Conectar{
 				tm_ticket
 			WHERE
 				tick_estado = 'Abierto'
-				AND WEEKDAY(fech_crea) <> 6
+				AND WEEKDAY(fech_crea) <> 5
 				AND (TIME(fech_crea) >= '08:30:00' AND TIME(NOW()) <= '18:30:00')";
 				$sql=$conectar->prepare($sql);
 						$sql->bindValue(1, $tick_id);

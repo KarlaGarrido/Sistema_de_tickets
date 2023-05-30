@@ -54,14 +54,32 @@
                             <span class="lbl">Activos Cómputo</span>
                         </a>
                     </li>
+                    
                     <li class="blue-dirty">
                        <a href="..\Activostele\">
-                            <span class="glyphicon glyphicon-th"></span>
+                       <span class="glyphicon glyphicon-th"></span>
                             <span class="lbl">Activos Telefonía</span>
                         </a>
                     </li>
+
+                    <li class="blue-dirty">
+                <a href="..\Responsivas\">
+                    <span class="glyphicon glyphicon-th"></span>
+                    <span class="lbl">Generacion de responsivas</span>
+                </a>
+            </li>
+
+                    <li class="blue-dirty">
+                <a href="..\Tareas\">
+                    <span class="glyphicon glyphicon-th"></span>
+                    <span class="lbl">Tareas</span>
+                </a>
+            </li>
                 </ul>
             </nav>
+
+            
+            
         <?php
     } elseif ($_SESSION["rol_id"] == 3) {
         ?>
