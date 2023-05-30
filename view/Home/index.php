@@ -53,7 +53,6 @@
 			
 			
 			
-			
 			<div class="carousel" style="width: 100%">
   <img src="../../public/img/imagen1.jpg" alt="Imagen 1">
   <img src="../../public/img/imagen2.jpg" alt="Imagen 2">
