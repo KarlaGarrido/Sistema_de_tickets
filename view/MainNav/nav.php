@@ -65,14 +65,27 @@
                     <li class="blue-dirty">
                 <a href="..\Responsivas\">
                     <span class="glyphicon glyphicon-th"></span>
-                    <span class="lbl">Generacion de responsivas</span>
+                    <span class="lbl">Generación de responsivas cómputo</span>
                 </a>
             </li>
 
+            <li class="blue-dirty">
+                <a href="..\ResponsivasT\">
+                    <span class="glyphicon glyphicon-th"></span>
+                    <span class="lbl">Generación de responsivas telefonía</span>
+                </a>
+            </li>
                     <li class="blue-dirty">
+                <a href="..\NuevaTarea\index.php">
+                    <span class="glyphicon glyphicon-th"></span>
+                    <span class="lbl">Crear Tarea</span>
+                </a>
+            </li>
+
+            <li class="blue-dirty">
                 <a href="..\Tareas\">
                     <span class="glyphicon glyphicon-th"></span>
-                    <span class="lbl">Tareas</span>
+                    <span class="lbl">Consultar tareas</span>
                 </a>
             </li>
                 </ul>

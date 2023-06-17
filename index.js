@@ -20,5 +20,3 @@ $(document).on("click", "#btnsoporte", function () {
 });
 
 init();
-
-

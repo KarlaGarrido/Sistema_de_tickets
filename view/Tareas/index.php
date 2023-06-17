@@ -19,37 +19,63 @@
     <?php require_once("../MainNav/nav.php");?>
 
 	<!-- Contenido -->
-  
-  <div class="container">
-    <h2>Responsivas de Equipos de Cómputo</h2>
-    <form>
-      <label for="nombre">Nombre:</label>
-      <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+  <div class="page-content">
+		<div class="container-fluid">
+
+			<header class="section-header">
+				<div class="tbl">
+					<div class="tbl-row">
+						<div class="tbl-cell">
+							<h3>Tareas</h3>
+							<ol class="breadcrumb breadcrumb-simple">
+								<li><a href="#">Home</a></li>
+								<li class="active">Tareas</li>
+							</ol>
+						</div>
+					</div>
+				</div>
+			</header>
+
+
       
-      <label for="email">Correo electrónico:</label>
-      <input type="email" id="email" name="email" placeholder="Ingrese su correo electrónico">
-      
-      <label for="equipo">Equipo:</label>
-      <input type="text" id="equipo" name="equipo" placeholder="Ingrese el nombre del equipo">
-      
-      <label for="numero_serie">Número de serie:</label>
-      <input type="text" id="numero_serie" name="numero_serie" placeholder="Ingrese el número de serie del equipo">
-      
-      <label for="departamento">Departamento:</label>
-      <input type="text" id="departamento" name="departamento" placeholder="Ingrese el departamento">
-      
-      <label for="fecha">Fecha:</label>
-      <input type="text" id="fecha" name="fecha" placeholder="Ingrese la fecha">
-      
-      <label for="comentarios">Comentarios:</label>
-      <textarea id="comentarios" name="comentarios" placeholder="Ingrese sus comentarios"></textarea>
-      
-      <button type="submit">Enviar</button>
-    </form>
-  </div>
-</body>
-</html>
-	<!-- Contenido -->
+      <div class="box-typical box-typical-padding">
+				<table id="ticket_data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
+					<thead>
+						<tr>
+							<th style="width: 5%;">No.Tarea</th>
+							<th class="d-none d-sm-table-cell" style="width: 25%;">Titulo</th>
+							<th class="d-none d-sm-table-cell" style="width: 5%;">Estado</th>
+							<th class="d-none d-sm-table-cell" style="width: 10%;">Fecha Creación</th>
+							<th class="d-none d-sm-table-cell" style="width: 10%;">Fecha Entrega</th>
+							<th class="text-center" style="width: 5%;"></th>
+						</tr>
+					</thead>
+					<tbody>
+
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+	</div>
+
+  <div class="page-content">
+		<div class="container-fluid">
+
+			<div class="tasks-grid">
+				<div class="tasks-grid-col red">
+					<div class="tasks-grid-col-title">New tasks <strong>1</strong></div>
+
+					<section class="box-typical task-card">
+						<div class="task-card-create">
+							<input type="text" placeholder="Create new task"/>
+						</div>
+						<div class="task-card-footer text-center">
+							<button type="button" class="btn btn-rounded">Create task</button>
+						</div>
+					</section>
+
+  <!-- Contenido -->
 
 	<?php require_once("../MainJs/js.php");?>
 
