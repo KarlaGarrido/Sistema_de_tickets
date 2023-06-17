@@ -6,7 +6,7 @@
 switch($_GET["op"]){
 
 case "listar":
-			$datos=$computo->listar_computo();
+			$datos=$computo->listar_computo($_POST["compu_id"]);
 			$data=Array();
 			foreach($datos as $row){
 			$sub_array=array();
@@ -20,16 +20,16 @@ case "listar":
             $sub_array[] = '<button type="button" onClick="ver('.$row["compu_id"].');"  id="'.$row["compu_id"].'" class="btn btn-inline btn-primary btn-sm ladda-button"><i class="fa fa-eye"></i></button>';
              $data[] = $sub_array;
             }
-			 $results = array(
+			 	
+			$results = array(
                 "sEcho"=>1,
                 "iTotalRecords"=>count($data),
                 "iTotalDisplayRecords"=>count($data),
-                "aaData"=>$data);
-             }
-            
-            echo json_encode($results);
-        break;
-
-
+                "aaData"=>$data);         
+            	echo json_encode($results);
+		break;
+	
+			
+	}
 
 ?>

@@ -24,6 +24,17 @@
 <link rel="stylesheet" href="../../public/css/lib/datatables-net/datatables.min.css">
 <link rel="stylesheet" href="../../public/css/separate/vendor/datatables-net.min.css">
 
+<link rel="stylesheet" href="../../public/css/separate/vendor/bootstrap-datetimepicker.min.css">
+<link rel="stylesheet" href="../../public/css/separate/vendor/bootstrap-daterangepicker.min.css">
+<link rel="stylesheet" href="../../public/css/lib/clockpicker/bootstrap-clockpicker.min.css">
+<link rel="stylesheet" href="../../public/css/separate/vendor/bootstrap-select/bootstrap-select.min.css">
+    <link rel="stylesheet" href="../../public/css/lib/font-awesome/font-awesome.min.css">
+    <link rel="stylesheet" href="../../public/css/lib/bootstrap/bootstrap.min.css">
+   <link rel="stylesheet" href="../../public/css/lib/charts-c3js/c3.min.css"> 
+    <link rel="stylesheet" href="../../public/css/main.css">
+
+    <link href="css/lib/charts-c3js/c3.min.css" rel="stylesheet" type="text/css">
+
 <link rel="stylesheet" href="../../public/css/separate/vendor/select2.min.css">
 
 <link rel="stylesheet" href="../../public/css/main.css">

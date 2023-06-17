@@ -1,7 +1,7 @@
 <?php
  class Computo extends Conectar{
 
-public function listar_computo(){
+public function listar_computo($compu_id){
             $conectar= parent::conexion();
             parent::set_names();
             $sql="SELECT

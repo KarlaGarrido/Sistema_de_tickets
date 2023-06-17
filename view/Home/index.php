@@ -6,7 +6,7 @@
 <html>
     <?php require_once("../MainHead/head.php");?>
 	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
-	<link rel="stylesheet" type="text/css" href="carrusel.css">
+	<!--<link rel="stylesheet" type="text/css" href="carrusel.css">-->
 	<title>SSITEL::Home</title>
 </head>
 <body class="with-side-menu">
@@ -50,14 +50,37 @@
 					</div>
 				</div>
 			</div>
-			
-			
-			
-			<div class="carousel" style="width: 100%">
-  <img src="../../public/img/imagen1.jpg" alt="Imagen 1">
-  <img src="../../public/img/imagen2.jpg" alt="Imagen 2">
-  <img src="../../public/img/imagen3.jpg" alt="Imagen 3">
-  </div>
+		<!--<div class="carousel" style="width: 100%">
+	<img src="../../public/img/imagen1.jpg" alt="Imagen 1">
+	<img src="../../public/img/imagen2.jpg" alt="Imagen 2">
+	<img src="../../public/img/imagen3.jpg" alt="Imagen 3">
+	</div>-->
+	<section class="card">
+            <header class="card-header">
+                Resumen de actividad
+            </header>
+            <div class="card-block">
+                <div id="combination-chart"></div>
+            </div>
+        </section>
+  
+		<div class="box-typical box-typical-padding">
+				<table id="empleados_data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
+					<thead>
+						<tr>
+							<th style="width: 20%;">Nombre</th>
+							<th class="d-none d-sm-table-cell" style="width: 15%;">Categoria</th>
+							<th class="d-none d-sm-table-cell" style="width: 10%;">Total de tickets</th>
+						</tr>
+					</thead>
+					<tbody>
+
+					</tbody>
+				</table>
+			</div>
+
+		</div>
+	</div>
 			
 		</div>
 	</div>
@@ -65,10 +88,12 @@
 
 	<?php require_once("../MainJs/js.php");?>
 
-	<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
+	<!--<script src="//cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-	<script type="text/javascript" src="carrusel.js"></script>
+	<script type="text/javascript" src="carrusel.js"></script>-->
 	<script type="text/javascript" src="home.js"></script>
+
+	
 
 </body>
 </html>
