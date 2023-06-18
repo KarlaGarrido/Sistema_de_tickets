@@ -23,7 +23,7 @@
 				<div class="tbl">
 					<div class="tbl-row">
 						<div class="tbl-cell">
-							<h3>Activos Cómmputo</h3>
+							<h3>Activos Cómputo</h3>
 							<ol class="breadcrumb breadcrumb-simple">
 								<li><a href="#">Home</a></li>
 								<li class="active">Activos Cómputo</li>
@@ -37,14 +37,15 @@
 				<table id="computo_data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
 					<thead>
 						<tr>
-							<th style="width: 5%;">Nro.equipo</th>
+							<th style="width: 3%;">Nro.equipo</th>
+							<th class="d-none d-sm-table-cell" style="width: 15%;">Tipo</th>
 							<th class="d-none d-sm-table-cell" style="width: 15%;">Marca</th>
 							<th class="d-none d-sm-table-cell" style="width: 15%;">Modelo</th>
 							<th class="d-none d-sm-table-cell" style="width: 15%;">Serie</th>
 							<th class="d-none d-sm-table-cell" style="width: 10%;">Estatus</th>
 							<th class="d-none d-sm-table-cell" style="width: 10%;">Responsiva</th>
 							<th class="d-none d-sm-table-cell" style="width: 10%;">Empleado</th>
-							<th class="text-center" style="width: 5%;">Ver</th>
+							<th class="text-center" style="width: 5%;"></th>
 						</tr>
 					</thead>
 					<tbody>

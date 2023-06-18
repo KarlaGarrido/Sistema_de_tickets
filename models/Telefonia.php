@@ -1,10 +1,10 @@
 <?php
- class Computo extends Conectar{
+ class Telefonia extends Conectar{
 
-    public function listar_computo($compu_id){
+    public function listar_computo($tel_id){
         $conectar = parent::conexion();
         parent::set_names();
-        $sql = "SELECT * FROM `tm_computo` WHERE 1";
+        $sql = "SELECT * FROM `tm_telefonia` WHERE 1";
 
         $sql = $conectar->prepare($sql);
         $sql->execute();

@@ -34,7 +34,7 @@
 			</header>
 
 			<div class="box-typical box-typical-padding">
-				<table id="ticket_data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
+				<table id="telefonia_data" class="table table-bordered table-striped table-vcenter js-dataTable-full">
 					<thead>
 						<tr>
 							<th style="width: 5%;">Nro.equipo</th>
@@ -58,7 +58,7 @@
 	</div>
 	<!-- Contenido -->
 
-	<?php require_once("teleasignar.php");?>
+	
 	<?php require_once("../MainJs/js.php");?>
 	
 	<script type="text/javascript" src="activostele.js"></script> 
