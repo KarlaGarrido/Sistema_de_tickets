@@ -63,6 +63,20 @@
                     </li>
 
                     <li class="blue-dirty">
+                        <a href="..\Nuevocomputo\">
+                            <span class="glyphicon glyphicon-th"></span>
+                            <span class="lbl">Nuevo Registro de Cómputo</span>
+                        </a>
+                    </li>
+
+                    <li class="blue-dirty">
+                        <a href="..\Nuevotelefonia\">
+                            <span class="glyphicon glyphicon-th"></span>
+                            <span class="lbl">Nuevo Registro de Telefonía</span>
+                        </a>
+                    </li>
+
+                    <li class="blue-dirty">
                 <a href="..\Responsivas\">
                     <span class="glyphicon glyphicon-th"></span>
                     <span class="lbl">Generación de responsivas cómputo</span>

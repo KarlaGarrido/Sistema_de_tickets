@@ -4,6 +4,9 @@
  $telefonia= new Telefonia();
 
 switch($_GET["op"]){
+	case "insert":
+		$telefonia->insert_telefonia($_POST["tel_id"],$_POST["tel_num"],$_POST["tel_tipo"],$_POST["tel_mar"],$_POST["tel_mod"],$_POST["tel_ser"],$_POST["est_tel"],$_POST["resp_id"],$_POST["usu_nom"],$_POST["usu_ap"],$_POST["fech_crea"]);
+		break;
 
 case "listar":
 			$datos=$computo->listar_telefonia($_POST["tel_id"]);
