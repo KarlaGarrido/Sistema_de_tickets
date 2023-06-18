@@ -5,7 +5,14 @@
 
 switch($_GET["op"]){
 
-case "listar":
+	case "insert":
+		$telefonia->insert_computo($_POST["compu_id"], $_POST["compu_tipo"], $_POST["compu_mar"], $_POST["compu_mod"],$_POST["compu_ser"], $_POST["est_compu"], $_POST["resp_id"], $_POST["usu_nom"], $_POST["usu_ap"], $_POST["fech_crea"]);
+		break;
+
+	
+		
+	
+	case "listar":
 			$datos=$computo->listar_computo($_POST["compu_id"]);
 			$data=Array();
 			foreach($datos as $row){
