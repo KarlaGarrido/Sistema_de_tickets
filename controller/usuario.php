@@ -100,6 +100,7 @@
             echo json_encode($datos);
         break;
 
+        
         case "combo";
        $datos = $usuario->get_usuario_x_rol();
        if(is_array($datos)==true and count($datos)>0){
@@ -112,6 +113,9 @@
        }
         break;
 
- 
+
+        
+
+
     }
 ?>

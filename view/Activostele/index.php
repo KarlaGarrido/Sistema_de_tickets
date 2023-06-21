@@ -61,7 +61,7 @@
 	
 	<?php require_once("../MainJs/js.php");?>
 	
-	<script type="text/javascript" src="activostele.js"></script> 
+	<script type="text/javascript" src="telconsulta.js"></script> 
 
 </body>
 </html>
