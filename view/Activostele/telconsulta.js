@@ -17,7 +17,7 @@ $(document).ready(function(){
                 'pdfHtml5'
                 ],
         "ajax":{
-            url: '../../controller/computo.php?op=listar',
+            url: '../../controller/telefonia.php?op=listar_x_tel',
             type : "post",
             dataType : "json",	
             data:{compu_id : 1},					

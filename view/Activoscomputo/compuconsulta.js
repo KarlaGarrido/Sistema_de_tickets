@@ -1,8 +1,18 @@
-function init(){
+var tabla;
+var usu_id = $('#user_idx').val();
+var rol_id = $('#rol_idx').val();
 
+function init(){
+    $("#compu_form").on("submit",function(e){
+        guardar(e);
+    });
 }
 
 $(document).ready(function(){
+
+    $.post("../../controller/usuario.php?op=combo_compu", function (data){
+        $('#usu_asig').html(data);
+    })
     tabla=$('#computo_data').dataTable({
         "aProcessing": true,
         "aServerSide": true,
@@ -58,5 +68,18 @@ $(document).ready(function(){
 
 
 });
+
+
+function asignar(compu_id){
+    $.post("../../controller/computo.php?op=listar", {compu_id : compu_id}, function (data){
+        data.JSON.parse(data);
+        $('#compu_id').val(data.compu_id);
+
+        $('#mdltitulo').html('Asignar Usuario');
+        $("#modalasignar").modal('show');
+    })
+  
+    
+}
 
 init();

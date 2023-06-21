@@ -1,6 +1,5 @@
 <?php
  class Telefonia extends Conectar{
-    
     public function insert_telefonia($tel_id, $tel_num, $tel_tipo, $tel_mar, $tel_mod, $tel_ser, $est_tel, $resp_id, $usu_nom, $usu_ap, $fech_crea){
         $conectar = parent::conexion();
         parent::set_names();
@@ -19,17 +18,15 @@
         return $resultado=$sql->fetchAll();
             
     }
-
-
-
-    public function listar_telefonia($tel_id){
-        $conectar = parent::conexion();
+      
+    
+    public function listar_tel($tel_id){
+        $conectar= parent::conexion();
         parent::set_names();
-        $sql = "SELECT * FROM `tm_telefonia` WHERE 1";
-
-        $sql = $conectar->prepare($sql);
-        $sql->execute();
-        return $resultado = $sql->fetchAll();
+        $sql="SELECT * FROM tm_telefonia where est=1";
+        $sql=$conectar->prepare($sql);
+               $sql->execute();
+        return $resultado=$sql->fetchAll();
     }
  }    
 ?>

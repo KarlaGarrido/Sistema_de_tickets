@@ -20,6 +20,8 @@
         return $resultado=$sql->fetchAll();
             
     }
+
+   
     public function listar_computo($compu_id){
         $conectar = parent::conexion();
         parent::set_names();
@@ -29,6 +31,9 @@
         $sql->execute();
         return $resultado = $sql->fetchAll();
     }
+
+    
+    
  }    
 ?>
 
