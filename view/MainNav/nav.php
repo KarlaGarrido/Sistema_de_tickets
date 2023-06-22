@@ -56,7 +56,7 @@
                     </li>
                     
                     <li class="blue-dirty">
-                       <a href="..\Activostele\">
+                       <a href="..\Activostelefonico\">
                        <span class="glyphicon glyphicon-th"></span>
                             <span class="lbl">Activos Telefonía</span>
                         </a>
