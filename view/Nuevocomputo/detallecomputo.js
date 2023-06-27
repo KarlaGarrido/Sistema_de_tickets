@@ -14,7 +14,7 @@ function init() {
       $("#informacionForm").submit(function(event) {
         event.preventDefault(); // Evitar el envío del formulario por defecto
         $.ajax({
-          url: "../models/Computo.php?op=insert", // Actualiza el URL según corresponda
+          url: "../controller/computo.php?op=insert", // Actualiza el URL según corresponda
           type: "POST", // Actualiza el método según corresponda
           data: $(this).serialize(),
           success: function(response) {
@@ -31,7 +31,7 @@ function init() {
       $("#caracteristicasForm").submit(function(event) {
         event.preventDefault(); // Evitar el envío del formulario por defecto
         $.ajax({
-          url: "../models/Computo.php?op=insert", // Actualiza el URL según corresponda
+          url: "../controller/computo.php?op=insert", // Actualiza el URL según corresponda
           type: "POST", // Actualiza el método según corresponda
           data: $(this).serialize(),
           success: function(response) {
