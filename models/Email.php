@@ -41,7 +41,8 @@ class Email extends PHPMailer{
         $this->FromName = "Ticket Abierto ".$id; /// intenta solo ticket abierto
         $this->CharSet = 'UTF8';
         $this->addAddress($correo);
-        $this->addAddress("soporte.cruz@outlook.com");  // con esto se le agrega cuantas veces sea necesario para el correo electronico, con eso indica que se le envia correo al usu_correo
+        $this->addAddress("soporte.cruz@outlook.com");
+        $this->addAddress("soporte@ssitel.net");  // con esto se le agrega cuantas veces sea necesario para el correo electronico, con eso indica que se le envia correo al usu_correo
         //$this->addAddress("tu.correo@mail.com");
         $this->addAddress($_SESSION["usu_email"]);
         $this->WordWrap = 50;
