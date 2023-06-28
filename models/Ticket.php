@@ -199,7 +199,8 @@
             $sql="update tm_ticket 
                 set	
                     tick_estado = 'Cerrado',
-                    where
+                    fech_cierre = now()
+                where
                     tick_id = ?";
             $sql=$conectar->prepare($sql);
             $sql->bindValue(1, $tick_id);
